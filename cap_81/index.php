@@ -6,12 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
 <body>
-    <a href="php/proveedores/index.php">CRUD Proveedores</a>
-    <br>
-    <a href="php/clientes/index.php">CRUD Clientes</a>
+    <h1>CRUD con Modelo Vista Controlador y paginado</h1>
+
+    <?php
+
+    require_once("controlador/personas_controlador.php");
+
+    ?>
+
 </body>
 
 </html>
