@@ -1,0 +1,14 @@
+Copiar la carpeta donde esta guardado mi projecto
+pegarlo en crear nuevo proyecto de la pagina de github
+me tiene que dar un tilde verde
+Puedo poenr una descripcion
+le pongo si es publico o privado
+y le doy crear repositorio
+aparece .or create a new repo blabla
+voy a la carpeta donde esta mi proyecto
+abro git bush here
+git init
+git status
+git add .
+
+
