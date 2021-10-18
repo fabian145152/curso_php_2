@@ -1,0 +1,3 @@
+1° en la carpeta vista creo el formulario
+2° en modelo creo objeto_blob
+crear arch manejo_objetos.php y crear las clases
