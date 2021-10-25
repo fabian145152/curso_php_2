@@ -14,6 +14,8 @@
     $busqueda_secc = $_POST["seccion"];
     $busqueda_porig = $_POST["p_orig"];
 
+    echo $busqueda_secc;
+    echo $busqueda_porig;
 
     try {
         $base = new PDO('mysql:host=localhost; dbname=pruebas', 'root', 'belgrado');

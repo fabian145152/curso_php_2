@@ -22,6 +22,26 @@
 </head>
 
 <body>
+
+    <!-- Buscador -->
+    <form action="buscador.php" method="post">
+        <table>
+            <tr>
+                <td>Seccion</td>
+                <td><input type="text" name="seccion"></td>
+            </tr>
+            <tr>
+                <td>C. Art</td>
+                <td><input type="text" name="p_orig"></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td><input type="submit" name="enviando" value="Dale!"></td>
+            </tr>
+        </table>
+    </form>
+
+
     <br>
     <form action="pagina_insertar_pdo.php" method="post">
         <table>
