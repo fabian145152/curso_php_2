@@ -10,7 +10,13 @@
 
 <body>
     <h1>INTRODUCE TUS DATOS</h1>
-    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+    <ol>
+        <li>User: prueba</li>
+        <li>Pas: 1234</li>
+    </ol>
+
+    <form action=" <?php echo $_SERVER['PHP_SELF']; ?> " method="post">
+
         <table>
             <tr>
                 <td class="izq">Login:</td>
@@ -19,6 +25,10 @@
             <tr>
                 <td class="izq">Password:</td>
                 <td class="der"><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td class="izq">Recordar</td>
+                <td class="der"><input type="checkbox" name="recordar" id="recordar"><label for="recordar"></label></td>
             </tr>
             <tr>
                 <td colspan="2"><input type="submit" name="enviar" value="LOGIN"></td>
