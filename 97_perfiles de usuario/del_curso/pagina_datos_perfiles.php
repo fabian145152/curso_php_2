@@ -28,9 +28,7 @@
 			mysqli_select_db($conexion,$db_nombre) or die ("No se encuentra la BBDD");
 			
 			mysqli_set_charset($conexion, "utf8");
-            
-           
-			
+            			
 			$consulta="SELECT usuario, password, perfil FROM perfilusuarios WHERE usuario = ? AND password= ?";  
 			
 			echo "<br><br>";        
@@ -50,12 +48,9 @@
 		   } else{
 			
 				$ok=mysqli_stmt_bind_result($resultados,$usuario,$password, $perfil);   
-				
-				 
-			   
+					   
 		   }
-		   
-		   
+		   		   
 		   while(mysqli_stmt_fetch($resultados)){
 			
 				echo "Hola " . $usuario . "<br>";
@@ -67,18 +62,13 @@
 		   if($perfil=="administrador"){
 			   
 				include("menu_administrador.html");   
-			   
-			   
+						  
 		   }else{
-			   
-			   
+						  
 				include("menu_usuarios.html");   
-			   
+			  
 		   }
-            
-        
-		   
-		   
+            		   		   
 			mysqli_stmt_close($resultados);
 			mysqli_close($conexion);
             

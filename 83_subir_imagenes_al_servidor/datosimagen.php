@@ -22,7 +22,7 @@ if ($tamagno_imagen <= 3000000) {     //la carga del archivo se lleva a cabo si 
     if ($tipo_imagen == "image/jpg" || $tipo_imagen == "image/jpeg" || $tipo_imagen == "image/png" || $tipo_imagen == "image/gif") {
 
         //Es la ruta de la carpeta donde se guardaran las imagnenes
-        $carpeta_destino = $_SERVER["DOCUMENT_ROOT"] . "/curso_php/cap_83_subir_imagenes_al_servidor/imagenes/";
+        $carpeta_destino = $_SERVER["DOCUMENT_ROOT"] . "/curso_php_2/cap_83_subir_imagenes_al_servidor/imagenes/";
 
         //Movemos la imagen de la carpeta temporal a la carpeta de destino
         move_uploaded_file($_FILES["imagen"]["tmp_name"], $carpeta_destino . $nombre_imagen);
