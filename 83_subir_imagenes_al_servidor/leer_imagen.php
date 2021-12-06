@@ -26,7 +26,7 @@
     }
 
     ?>
-    <div><img src="/curso_php/cap_83_subir_imagenes_al_servidor/imagenes/<?php echo $ruta_img; ?>" alt="Imagen de la herramienta" width="20%"></div>
+    <div><img src="/curso_php_2/83_subir_imagenes_al_servidor/imagenes/<?php echo $ruta_img; ?>" alt="Imagen de la herramienta" width="20%"></div>
 
 
 
