@@ -1,5 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
+<body>
 
 
 
@@ -37,6 +46,11 @@ error   propiedad por si no va el archivo
     } else {
         echo "<br>El archivo no debe superar los 2MB";
     }
+    echo "<br>";
+    echo "<a href='index.php'>Inicio</a>";
+    echo "<br>";
+    echo "<br>";
+    echo "<a href='leer_imagen.php'>Ver las imagenes</a>";
 
     require("conecta.php");
     $conexion = mysqli_connect($db_host, $db_usuario, $db_pass);
@@ -49,4 +63,8 @@ error   propiedad por si no va el archivo
     //$sql = "INSERT INTO PRODUCTOS (FOTO) VALUES ('$nombre_imagen') ";
     $sql = "UPDATE PRODUCTOS SET FOTO='$nombre_imagen' WHERE CODIGOARTICULO='AR01'";
     $resultardos = mysqli_query($conexion, $sql);
-    
+
+    ?>
+</body>
+
+</html>

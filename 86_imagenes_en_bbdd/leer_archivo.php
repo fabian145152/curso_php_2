@@ -25,7 +25,7 @@
     mysqli_select_db($conexion, $db_nombre) or die("No se encuentra la base de datos");
     mysqli_set_charset($conexion, "utf8");
 
-    $consulta = "SELECT * FROM archivos WHERE id =4";
+    $consulta = "SELECT * FROM archivos WHERE id = 7 ";
 
     $resultado = mysqli_query($conexion, $consulta);
     while ($fila = mysqli_fetch_array($resultado)) {
@@ -40,7 +40,7 @@
     echo "<br>";
     echo "Tipo: " . $tipo;
     echo "<br>";
-    echo "<img src='data:image/png; base64, " . base64_encode($contenido) . "'>";
+    echo "<img src='data:image/jpg; base64, " . base64_encode($contenido) . "'>";
 
 
     ?>

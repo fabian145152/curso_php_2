@@ -22,7 +22,7 @@
 <body>
     <h1>Seguir por el video 84</h1>
     <form action="datosimagen.php" method="post" enctype="multipart/form-data">
-        <!-- El enctype="multipart/form-data" es para tratar imagenes, si no va nada es texto -->
+        <!-- El enctype="multipart/form-data" es para tratar imagenes, si no va anada es texto -->
         <table>
             <tr>
                 <td><label for="imagen">Imagen:</label></td>
