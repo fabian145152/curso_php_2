@@ -39,9 +39,7 @@
     $conexion->set_charset("utf8");
 
 
-    $sql = " SELECT * FROM `productos` WHERE seccion='DEPORTES' 
-    UNION 
-    SELECT * FROM `productosnuevos` WHERE SECCION='DEPORTES DE RIESGO'";
+    $sql = " SELECT * FROM `productos` WHERE seccion='DEPORTES' UNION SELECT * FROM `productosnuevos` WHERE SECCION='DEPORTES DE RIESGO'";
 
 
     $resultados = $conexion->query($sql);

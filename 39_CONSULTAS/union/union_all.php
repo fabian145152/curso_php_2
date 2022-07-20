@@ -28,9 +28,7 @@
     $conexion->set_charset("utf8");
 
 
-    $sql = " SELECT * FROM `productos` WHERE seccion='DEPORTES' 
-UNION ALL 
-SELECT * FROM `productosnuevos` WHERE SECCION='DEPORTES'";
+    $sql = " SELECT * FROM `productos` WHERE seccion='DEPORTES' UNION ALL SELECT * FROM `productosnuevos` WHERE SECCION='DEPORTES'";
 
 
     $resultados = $conexion->query($sql);
